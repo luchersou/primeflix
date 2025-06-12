@@ -1,0 +1,112 @@
+.filme-info {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 0 20px;
+    background-color: #222222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.filme-info h1 {
+    margin: 20px 0;
+    color: #ffffff;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.filme-info img {
+    border-radius: 8px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.filme-info h3 {
+    margin-top: 20px;
+    color: #e50914;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.filme-info span {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.area-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+    padding-bottom: 20px;
+}
+
+.area-buttons button {
+    flex: 1;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #e50914;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.area-buttons button:hover {
+    background-color: #ff121e;
+    transform: translateY(-2px);
+}
+
+.area-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .filme-info {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    
+    .filme-info h1 {
+        font-size: 1.8rem;
+    }
+    
+    .filme-info img {
+        max-height: 300px;
+    }
+    
+    .area-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .area-buttons button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filme-info {
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+    
+    .filme-info h1 {
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+    
+    .filme-info img {
+        max-height: 250px;
+    }
+}
