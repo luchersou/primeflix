@@ -75,7 +75,7 @@ body {
 }
 
 .lista-filmes article a:hover {
-  background-color: #ff121e;
+  background-color: #f81924;
 }
 
 @media (max-width: 768px) {
