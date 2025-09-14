@@ -19,8 +19,8 @@
 
 .not-found a {
     text-decoration: none;
-    background-color: #116feb;
-    color: #FFF;
+    background-color: hsl(214, 87%, 49%);
+    color: hsl(0, 0%, 100%);
     padding: 10px 20px;
     border-radius: 4px;
     margin-top: 14px;
@@ -29,6 +29,6 @@
 }
 
 .not-found a:hover {
-    background-color: #0e5cc7;
+    background-color: hsl(215, 87%, 42%);
     transform: scale(1.05);
 }

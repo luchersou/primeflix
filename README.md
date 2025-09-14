@@ -2,7 +2,7 @@
 ## Sobre o Projeto
 Aplicação React desenvolvida para explorar e descobrir filmes, consumindo dados da API do TMDB (The Movie Database). O projeto demonstra a implementação de conceitos fundamentais do React e desenvolvimento frontend moderno.
 ## Demo
-[ Acesse a aplicação online](https://lucky-nasturtium-742c6c.netlify.app/)
+[ Acesse a aplicação online](https://frolicking-boba-fb9192.netlify.app/)
 <p>Realizado deploy da aplicação no Netlify
   
 ##  Tecnologias Utilizadas

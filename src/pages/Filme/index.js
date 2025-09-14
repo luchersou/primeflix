@@ -61,25 +61,27 @@ function Filme(){
         )
     }
 
-    return(
-        <div className="filme-info">
-            <h1>{filme.title}</h1>
-            <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt={filme.title} />
-            <h3>Sinopse</h3>
-            <span>{filme.overview}</span>
+    const abrirTrailer = () => {
+    const url = `https://youtube.com/results?search_query=${encodeURIComponent(filme.title + ' Trailer')}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+}
 
-            <strong>Avaliação: {filme.vote_average} / 10</strong>
-            <div className="area-buttons">
-                <button onClick={salvarFilme}>Salvar</button>
-                <button>
-                    <a target="_blank" rel="external" href={`https:/youtube.com/results?search_query=${filme.title} Trailer`}>
-                        Trailer
-                    </a>
-                </button>
+return(
+    <div className="filme-info">
+        <h1>{filme.title}</h1>
+        <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt={filme.title} />
+        <h3>Sinopse</h3>
+        <span>{filme.overview}</span>
 
-            </div>
+        <strong>Avaliação: {filme.vote_average.toFixed(1)}</strong>
+        <div className="area-buttons">
+            <button onClick={salvarFilme}>Salvar</button>
+            <button onClick={abrirTrailer}>
+                Trailer
+            </button>
         </div>
-    )
+    </div>
+)
 }
 
 export default Filme;

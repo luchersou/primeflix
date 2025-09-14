@@ -1,7 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #141414;
-  color: #ffffff;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
 }
 
 .lista-filmes {
@@ -30,7 +30,7 @@ body {
 }
 
 .lista-filmes article {
-  background-color: #222222;
+  background-color: hsl(0, 0%, 13%);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -49,8 +49,8 @@ body {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
-  background-color: #333333;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
 }
 
 .lista-filmes article img {
@@ -65,8 +65,8 @@ body {
   display: block;
   text-align: center;
   text-decoration: none;
-  background-color: #e50914;
-  color: #ffffff;
+  background-color: hsl(357, 92%, 47%);
+  color: hsl(0, 0%, 100%);
   padding: 15px;
   font-weight: bold;
   font-size: 16px;
@@ -75,7 +75,7 @@ body {
 }
 
 .lista-filmes article a:hover {
-  background-color: #f81924;
+  background-color: hsl(357, 91%, 59%);
 }
 
 @media (max-width: 768px) {
