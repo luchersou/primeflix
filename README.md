@@ -1,76 +1,65 @@
 # React Movie App 
 ## Sobre o Projeto
-Aplicação React desenvolvida para explorar e descobrir filmes, consumindo dados da API do TMDB (The Movie Database). O projeto demonstra a implementação de conceitos fundamentais do React e desenvolvimento frontend moderno.
-## Demo
-[ Acesse a aplicação online](https://frolicking-boba-fb9192.netlify.app/)
-<p>Realizado deploy da aplicação no Netlify
+Este projeto é uma aplicação web de filmes construída com React, que permite aos usuários explorar filmes populares e obter detalhes completos. A aplicação consome dados da API TMDB (The Movie Database), demonstrando a implementação de conceitos modernos de desenvolvimento frontend, como roteamento client-side e gerenciamento de estado.
+
+Acesse a versão final e veja como a aplicação funciona: [ Acessar a aplicação online](https://frolicking-boba-fb9192.netlify.app/)
   
-##  Tecnologias Utilizadas
+##  Tecnologias e Conceitos
 
 ### Frontend
+- React: Biblioteca principal para a construção da interface de usuário.
 
-<p>React - Biblioteca JavaScript para interfaces
-<p>HTML5 - Estruturação semântica
-<p>CSS3 - Estilização e responsividade
+- HTML5 e CSS3: Usados para estruturação semântica e estilização completa, incluindo design responsivo para se adaptar a qualquer tamanho de tela.
 
-## Roteamento e Navegação
+### Gerenciamento de Dados
+- Axios: Cliente HTTP para realizar requisições e consumir a API REST do TMDB.
 
-<p>React Router  - Navegação SPA (Single Page Application)
-<p>useNavigate - Navegação programática
-<p>useParams - Captura de parâmetros de rota
+- useState: Hook para gerenciar o estado local dos componentes, como a lista de filmes ou o status de carregamento.
 
-## Requisições HTTP
+- useEffect: Hook para lidar com efeitos colaterais, como a busca de dados da API ao carregar um componente.
 
-<p>Axios  - Cliente HTTP para consumo de API
-<p>TMDB API - Base de dados de filmes
+### Navegação (Roteamento Client-Side)
+- React Router: Biblioteca para criar uma navegação fluida de Single Page Application (SPA), sem recarregar a página a cada clique.
 
-## Experiência do Usuário
+- useParams: Hook para capturar parâmetros da URL, como o ID de um filme, permitindo carregar a página de detalhes correta.
 
-<p>React Toastify - Notificações elegantes
+### Funcionalidades Adicionais
+- React Toastify: Componente para exibir notificações elegantes de sucesso ou erro, melhorando o feedback ao usuário.
 
-## Hooks e Conceitos React
+## Como Rodar o Projeto
 
-<p>useState - Gerenciamento de estado local
-<p>useEffect - Efeitos colaterais e ciclo de vida
-<p>Props - Comunicação entre componentes
-<p>Custom Hooks - Lógica reutilizável
+```
+# 1. Clone o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+# 2. Navegue até o diretório do projeto
+cd seu-repositorio
+
+# 3. Instale as dependências
+npm install
+
+# 4. Inicie a aplicação
+npm start
+```
 
 ## Funcionalidades
 
-<p> Busca de filmes
-<p> Listagem de filmes populares
-<p> Detalhes completos dos filmes
-<p> Interface responsiva
-<p> Notificações de feedback
-<p> Navegação fluida entre páginas
+- Listagem de Filmes Populares: Exibe os filmes mais assistidos na página inicial.
 
-## Conceitos Aplicados
-<p>React Fundamentals
+- Detalhes Completos: Ao clicar em um filme, o usuário é redirecionado para uma página com sinopse, capa e outras informações.
 
-<p>Componentes Funcionais - Estrutura moderna do React
-<p>Hooks - Gerenciamento de estado e efeitos
-<p>Props - Comunicação pai-filho
-<p>Conditional Rendering - Renderização condicional
+- Adicionar aos Favoritos: Permite salvar filmes em uma lista local, utilizando o localStorage.
 
-## Desenvolvimento Web
+### Aprendizados Chave
 
-<p>CSS Responsivo - Adaptação para diferentes telas
-<p>Semantic HTML - Estrutura acessível
-<p>API Integration - Consumo de dados externos
-<p>SPA Navigation - Experiência de aplicação nativa
+Este projeto foi fundamental para consolidar o conhecimento em:
 
-## Execute a aplicação
-<p>npm start
-  
-## Aprendizados
+- Desenvolvimento com React e o uso de Hooks para gerenciar estado e efeitos.
 
-### Este projeto consolidou conhecimentos em:
+- Integração com APIs REST para buscar e exibir dados dinâmicos.
 
-<p>Desenvolvimento com React
-<p>Consumo de APIs REST
-<p>Gerenciamento de estado com Hooks
-<p>Roteamento client-side
-<p>Deploy em plataformas cloud
-<hr>
+- Roteamento client-side para uma experiência de usuário mais rápida e nativa.
 
-<i><b>Desenvolvido por Lucas Souza
+- Deploy em plataformas cloud
+
+<i><b>Desenvolvido por Lucas Herzinger Souza
